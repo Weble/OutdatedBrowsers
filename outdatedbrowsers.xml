@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_outdatedbrowsers</name>
+	<author>Weble S.r.l.</author>
+	<creationDate>March 2016</creationDate>
+	<copyright>(C) 2016 Weble S.r.l. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>daniele@weble.it</authorEmail>
+	<authorUrl>www.weble.it</authorUrl>
+	<version>1.0</version>
+	<description>PLG_SYSTEM_OUTDATEDBROWSERS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="outdatedbrowsers">outdatedbrowsers.php</filename>
+		<folder>outdatedbrowser</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_outdatedbrowsers.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_outdatedbrowsers.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="browser_version" type="list" default="transform" label="OUTDATEDBROWSERS_VERSION_LABEL" description="OUTDATEDBROWSERS_VERSION_DESC">
+					<option value="borderImage">OUTDATEDBROWSERS_BORDERIMAGE_OPTION</option>
+					<option value="transform">OUTDATEDBROWSERS_TRANSFORM_OPTION</option>
+					<option value="boxShadow">OUTDATEDBROWSERS_BOXSHADOW_OPTION</option>
+					<option value="borderSpacing">OUTDATEDBROWSERS_BORDERSPACING_OPTION</option>
+				</field>
+				<field name="anchor_target" type="list" default="_blank" label="OUTDATEDBROWSERS_ANCHOR_TARGET_LABEL" description="OUTDATEDBROWSERS_ANCHOR_TARGET_DESC">
+					<option value="_blank">OUTDATEDBROWSERS_ANCHOR_BLANK_OPTION</option>
+					<option value="_self">OUTDATEDBROWSERS_ANCHOR_SELF_OPTION</option>
+					<option value="_parent">OUTDATEDBROWSERS_ANCHOR_PARENT_OPTION</option>
+					<option value="_top">OUTDATEDBROWSERS_ANCHOR_TOP_OPTION</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
